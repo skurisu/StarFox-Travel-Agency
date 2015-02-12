@@ -1,0 +1,19 @@
+{
+  "name": "StarFox-Travel-Agency",
+  "version": "0.0.0",
+  "homepage": "https://github.com/skurisu/StarFox-Travel-Agency",
+  "authors": [
+    "Sarah Kurisu <sarah.kurisu@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1"
+  }
+}
