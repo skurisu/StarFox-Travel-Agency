@@ -2407,6 +2407,10 @@ a {
   text-decoration: none;
   color: black; }
 
+.menu_icon {
+  background-image: url('../images/menu_icon.png');
+  background-repeat: no-repeat; }
+
 .hero_text p {
   background-color: #88C2C0;
   font-weight: 300; }
@@ -2466,3 +2470,7 @@ footer {
 @media only screen and (max-width: 40em) {
   header {
     background-color: #262626; } }
+
+.nav {
+  padding-right: 0;
+  padding-left: 0; }
