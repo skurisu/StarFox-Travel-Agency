@@ -1,12 +1,55 @@
 @import "partials/settings";
 @import "partials/foundation";
+@import "partials/globalstuff";
 
-$dark-color : #333333;
-
+/* test stuff */
 body {
-  background-color: $dark-color;
+  background-color: blue;
 }
 
-h1 {
-  color: #F1F1F1;
+header {
+  background-color: orange;
+  // height: 240px; 
+}
+
+.hero {
+  background-color: pink;
+}
+
+.highlights {
+  background-color: red;
+}
+
+.more_deals_container {
+  background-color: yellow;
+}
+
+footer {
+  background-color: $dark-grey;
+  color: white;
+  text-align: center;
+}
+
+.highlights h2,h3 {
+  text-align: center;
+}
+
+/*---------end test stuff---------*/
+
+.top-bar {
+  background-color: $dark-grey;
+}
+
+.right li {
+  border-top: 1px solid $teal-color;
+}
+
+.hero .row {
+  background-color: $teal-color;
+}
+
+header {
+  @media #{$small-only} {
+    background-color: $dark-grey;
+  }
 }

@@ -1,0 +1,43 @@
+/* variables */
+
+$teal-color: #88C2C0;
+$white-color: #FFFFFF;
+$font-color: #262626;
+$light-grey: #535353;
+$dark-grey: #262626;
+
+/* Global Styles */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero_text p {
+  background-color: $teal-color;
+  font-weight: 300;
+
+  span {
+    font-weight: 300;
+    font-weight: bold;
+  }
+}
+
+.hero_button {
+  background-color: $light-grey;
+  color: $white-color;
+}
+
+.highlights h2,h3 {
+  background-color: $light-grey;
+  color: $white-color;
+}
+.highlight_description p {
+  background-color: $light-grey;
+  color: $white-color;
+}
+
+footer p {
+  background-color: $dark-grey;
+}
+
+
