@@ -7,37 +7,109 @@ body {
   background-color: blue;
 }
 
-header {
-  background-color: orange;
-  // height: 240px; 
-}
-
-.hero {
-  background-color: pink;
-}
-
-.highlights {
-  background-color: red;
-}
-
-.more_deals_container {
-  background-color: yellow;
-}
-
-footer {
-  background-color: $dark-grey;
-  color: white;
-  text-align: center;
-}
-
-.highlights h2,h3 {
-  text-align: center;
-}
-
 /*---------end test stuff---------*/
+
+
+/*---------Small Size Only Elements---------*/
+header {
+  @media #{$small-only} {
+    background-color: $dark-grey;
+  }
+}
 
 .top-bar {
   background-color: $dark-grey;
+}
+
+.menu_icon {
+  display: block;
+  background-image: url('../images/menu_icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+.top-bar .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav.top-bar .name h1{
+
+  display: inline-block;
+
+  .ship_svg {
+    display: inline-block;
+    background-image: url('../images/logo.svg');
+    background-size: 50px 60px;
+    height: 60px;
+    width: 50px;
+  }
+
+  span {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    vertical-align:middle;
+
+  }
+
+  span:nth-child(2) {
+    font-weight: bold;
+    color: $teal-color;
+    font-size: 20px;
+  }
+
+  span:nth-child(3) {
+  color: $teal-color;
+  font-size: 20px;
+  }
+
+  a {
+    display: inline;
+    width: 250px;
+  }
+}
+
+header li {
+  @media #{$small-only} {
+    display: block;
+    text-align: left;
+  }  
+}
+
+.top-bar, .menu_icon {
+  height: 60px;
+}
+
+.top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
+  line-height: 60px;
+}
+
+.nav {
+  @media #{$small-only} {
+    background-color: $dark-grey;
+    padding-right: 0;
+    padding-left: 0;
+    }
+}
+
+// .top-bar-section ul li {
+//   margin-top: 1px solid $teal-color;
+// }
+
+
+.top-bar-section ul li > a {
+  font-weight: 300;
+  font-size: 18px;
+  color: $teal-color;
+}
+
+ul.title-area.show-for-small {
+  height: 60px;
 }
 
 .right li {
@@ -45,16 +117,197 @@ footer {
 }
 
 .hero .row {
-  background-color: $teal-color;
-}
-
-header {
   @media #{$small-only} {
-    background-color: $dark-grey;
+    background-color: $teal-color;
   }
 }
 
-.nav {
-  padding-right: 0;
-  padding-left: 0;
+.hero_text {
+  p {
+    @media #{$small-only} {
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 0;
+    }
+  }  
 }
+
+.ship_png {
+  @media #{$small-only} {
+    background-image: url('../images/ship.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.hero_action {
+  @media #{$small-only} {
+    margin-bottom: 60px;
+  }
+}
+
+/*---------Small Size Only Elements end---------*/
+
+/*---------Medium Size---------*/
+
+
+.ship_png {
+  @media #{$medium-only} {
+    background-image: url('../images/ship.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.hero_action {
+  @media #{$medium-only} {
+    width: 310px;
+    margin: auto;
+  }
+
+  a {
+    text-align: center;
+  }
+}
+
+.hero_text {
+  @media #{$medium-only} {
+  margin-top: -70px;
+  }
+
+  p {
+  text-align: center;
+  }
+}
+
+
+.highlight .detail_wrapper {
+  @media #{$medium-only} {
+    border-top: 0;
+    margin: 0;
+  }  
+
+
+  .price {
+    @media #{$medium-only} {
+      display: inline-block;
+      padding: 22px 40px 45px;
+      float: left;
+      width: 40%;
+      border-right: 1px solid #434343;
+    }
+
+    @media #{$in-between} {
+    width: 50%;
+    }
+  }
+
+  h2 {
+    @media #{$medium-only} {
+      border-bottom: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+  p {
+    @media #{$medium-only} {
+      padding: 0;
+      margin: 0;
+      width: auto;
+    }
+  }
+}
+
+.highlight_description {
+  @media #{$medium-only} {
+    min-height: 165px;
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+    padding: 40px;
+    border-left: 1px solid #646464;
+  }
+
+.highlight {
+  @media #{$medium-only} {
+    min-height: 165px;
+  }
+}
+
+  @media #{$in-between} {
+    width: 50%;
+  }
+}
+
+/*---------Medium Size Only Elements end---------*/
+
+/*---------Large Size---------*/
+
+.more_details {
+
+  h4 {
+    @media #{$large-only} {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 17px;
+    }
+  }
+
+  h5 {
+    @media #{$large-only} {
+      margin-top: 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid #434343;
+      font-weight: 300;
+      font-size: 35px;
+      padding-bottom: 17px;
+    }
+  }
+
+  @media #{$large-only} {
+    
+  }
+}
+
+.center_of_the_earth {
+
+  border-top: 1px solid #646464;
+
+}
+
+.just_to_jupiter {
+
+
+}
+
+.more_deals_wrapper {
+  border-top: 1px solid #646464;
+}
+
+.more_deals_mobile {
+
+  p {
+    padding-top: 15px;
+    padding-bottom: 14px;
+  }
+
+  @media #{$large-only} {
+    
+  }
+
+  @media #{$large-only} {
+    
+  }
+}
+
+

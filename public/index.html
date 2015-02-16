@@ -11,30 +11,34 @@
   <header>
     <div class="row ">
       <div class="small-12 columns nav">
-        <h1 class="desktop_logo hide-for-small">
-          <a href="#">
-            <span>Starfox</span> Intergalactic Travel Agency
-          </a>
-        </h1>
-        <nav class="desktop-nav show-for-medium-up">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Interstellar Travel</a></li>
-          </ul>
-        </nav>
+        <div class="show-for-medium-up">
+          <h1 class="desktop_logo">
+            <div class="bigship_png"></div>
+            <a href="#">
+              <span>Starfox</span> Intergalactic Travel Agency
+            </a>
+          </h1>
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Interstellar Travel</a></li>
+            </ul>
+          </nav>
+        </div>
         <nav class="top-bar show-for-small" data-topbar role="navigation">
           <ul class="title-area show-for-small">
             <li class="name">
               <h1 class="mobile_logo">
                 <a href="#">
-                  <span>Starfox</span> Intergalactic Travel Agency
+                  <span class="ship_svg"></span>
+                  <span>Star</span><span>Fox</span> 
                 </a>
               </h1>
             </li>
             <li class="toggle-topbar">
-              <a href="#"><span class="menu_icon">ICONHERE</span></a>
+              <a href="#"><span class="menu_icon"></span></a>
             </li>
           </ul>
           <section class="top-bar-section">
@@ -56,13 +60,14 @@
       <div class="small-12 columns">
         <div class="hero_wrapper clearfix">
           <div class="hero_text">
+            <div class="ship_png"></div>
             <p>
               We will take you to the <span>Moon and back</span>! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cras vitae leo est. Maecenas sit amet nisi tellus. Donec a consequat mi, ut sodales eros!
             </p>
           </div><!-- .hero_text -->
-          <div class="hero_action">
-            <a href="#" class="hero_button">Find Out More</a>
-          </div><!-- .hero_action -->
+          <a href="#"><div class="hero_action">
+            <p class="hero_button">Find Out More</p>
+          </div></a><!-- .hero_action -->
           </div><!-- .hero_wrapper -->
       </div><!-- .small-12 -->
     </div><!-- .row -->
@@ -71,24 +76,32 @@
   <div class="highlights">
     <div class="row">
       <div class="large-4 medium-12 small-12 columns">
-        <div class="to_the_moon highlight">
+        <a href="#"><div class="to_the_moon highlight">
           <h2 class="hide-for-medium">To the Moon</h2>
-          <h3>$30,000</h3>
-          <div class="highlight_description">
-            <h2 class="hide-for-small hide-for-large">To The Moon</h2>
-            <p>Covers travel fare, lodgings, and meals for 3 months in space</p>
-          </div><!-- .highlight description -->
-        </div><!-- .highlight -->
+            <div class="detail_wrapper">
+              <div class="price">
+                <h3>$30,000</h3>
+              </div>
+                <div class="highlight_description">
+                  <h2 class="hide-for-small hide-for-large">To The Moon</h2>
+                  <p>Covers travel fare, lodgings, and meals for 3 months in space</p>
+                </div><!-- .highlight description -->
+            </div><!-- .detail wrapper -->
+        </div></a><!-- .highlight -->
       </div><!-- .large-4 -->
 
       <div class="large-4 medium-12 small-12 columns">
         <div class="just_around_earth highlight">
           <h2 class="hide-for-medium">Just Around Earth</h2>
-          <h3>$10,000</h3>
-          <div class="highlight_description">
-            <h2 class="hide-for-small hide-for-large">Just Around Earth</h2>
-            <p>Covers travel fare, lodgings, and meals for 2 weeks in space</p>
-          </div><!-- .highlight_description -->
+            <div class="detail_wrapper">
+              <div class="price">
+                <h3>$10,000</h3>
+              </div>
+                <div class="highlight_description">
+                  <h2 class="hide-for-small hide-for-large">Just Around Earth</h2>
+                  <p>Covers travel fare, lodgings, and meals for 2 weeks in space</p>
+                </div><!-- .highlight_description -->
+            </div><!-- .detail wrapper -->
         </div><!-- .highlight -->
       </div><!-- .large-4 -->
 
@@ -102,7 +115,10 @@
             <h4>Center of the Earth</h4>
             <h5>$156,000</h5>
           </div><!-- .small_highlight -->
-          <a href="#" class="more_deals_mobile">More Deals</a>
+          <div class="more_deals_wrapper">
+            <a href="#" class="more_deals_mobile"><p>More Deals<img src="../images/arrow.png" class="arrow"></p></a>
+            <div class="arrow"></div>
+          </div>
         </div><!-- .highlight -->
       </div><!-- .large-4 -->
     </div><!-- .row -->
@@ -110,9 +126,10 @@
 
   <div class="more_deals_container hide-for-large">
     <div class="row">
-      <div class="small-12 columns">
-        <a href="#" class="more_deals_mobile">More Deals</a>
-      </div><!-- .small-12 -->
+      <a href="#"><div class="small-12 columns">
+        <p class="more_deals_mobile">More Deals<img src="../images/arrow.png" class="arrow"></p>
+        <!-- <div class="arrow"></div> -->
+      </div><!-- .small-12 --></a>
     </div><!-- .row -->
   </div><!-- .more_deals_container -->
 
