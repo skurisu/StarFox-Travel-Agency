@@ -155,6 +155,13 @@ ul.title-area.show-for-small {
 
 /*---------Medium Size---------*/
 
+.columns {
+  @media #{$medium-down} {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+  }
+}
+
 
 .ship_png {
   @media #{$medium-only} {
@@ -257,12 +264,12 @@ ul.title-area.show-for-small {
 /*---------Large Size---------*/
 
 .hero_wrapper {
-  @media #{$large-only} {
+  @media #{$large-up} {
     padding-bottom: 15px;
   }
 }
 .hero_text p {
-  @media #{$large-only} {
+  @media #{$large-up} {
     text-align: left;
     display: inline-block;
     width: 60%;
@@ -274,7 +281,7 @@ ul.title-area.show-for-small {
 }
 
 .shiplarge_png {
-  @media #{$large-only} {
+  @media #{$large-up} {
     background-image: url('../images/ship.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,7 +296,7 @@ ul.title-area.show-for-small {
 
 .hero_action {
 
-  @media #{$large-only} {
+  @media #{$large-up} {
     display: inline-block;
     width: 310px;
     margin-left: 30px;
@@ -300,7 +307,7 @@ ul.title-area.show-for-small {
 .more_details {
 
   h4 {
-    @media #{$large-only} {
+    @media #{$large-up} {
       margin-top: 0;
       margin-bottom: 0;
       padding-top: 17px;
@@ -308,7 +315,7 @@ ul.title-area.show-for-small {
   }
 
   h5 {
-    @media #{$large-only} {
+    @media #{$large-up} {
       margin-top: 0;
       margin-bottom: 0;
       border-bottom: 1px solid #434343;
@@ -317,33 +324,37 @@ ul.title-area.show-for-small {
       padding-bottom: 17px;
     }
   }
-
-  @media #{$large-only} {
-    
-  }
 }
 
 .center_of_the_earth {
 
-  border-top: 1px solid #646464;
-
+  @media #{$large-up} {
+    border-top: 1px solid #646464;
+  }
 }
 
 .more_deals_wrapper {
-  border-top: 1px solid #646464;
-  transition-property: background-color;
-  transition-duration: 1s;
-  transition-delay: .5s;
+  @media #{$large-up} {
+    border-top: 1px solid #646464;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: .5s;
+  }
 }
 
 .more_deals_wrapper:hover {
-  background-color: $dark-grey;
+  @media #{$large-up} {
+    background-color: $dark-grey;
+  }
 }
 
 .more_deals_mobile p {
-
+  @media #{$large-up} {
   padding-top: 15px;
   padding-bottom: 14px;
+  }
 }
+
+
 
 
