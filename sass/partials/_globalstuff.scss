@@ -116,10 +116,10 @@ header {
   a {
     color: $white-color;
   }
-}
 
-.hero_action:hover{
-  background-color: $dark-grey;
+  &:hover {
+    background-color: $dark-grey;
+  }
 }
 
 .highlights {
@@ -172,11 +172,15 @@ header {
   transition-property: background-color;
   transition-duration: 1s;
   transition-delay: .5s;
+
+  &:hover {
+    background-color: $dark-grey;
+  }
 }
 
-.to_the_moon:hover {
-  background-color: $dark-grey;
-}
+// .to_the_moon:hover {
+//   background-color: $dark-grey;
+// }
 
 footer {
   

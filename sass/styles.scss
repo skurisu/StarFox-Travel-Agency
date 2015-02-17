@@ -118,9 +118,13 @@ ul.title-area.show-for-small {
 }
 
 .hero_wrapper {
-@media #{$small-only} {
-  margin-top: 0;
-}
+  @media #{$small-only} {
+    margin-top: 0;
+  }
+
+  @media #{$large-up} {
+    padding-bottom: 15px;
+  }
 }
 
 .hero_text {
@@ -135,6 +139,16 @@ ul.title-area.show-for-small {
 
 .ship_png {
   @media #{$small-only} {
+    background-image: url('../images/ship.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+
+  @media #{$medium-only} {
     background-image: url('../images/ship.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,17 +177,6 @@ ul.title-area.show-for-small {
 }
 
 
-.ship_png {
-  @media #{$medium-only} {
-    background-image: url('../images/ship.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 230px;
-    width: 300px;
-    display: block;
-    margin: auto;
-  }
-}
 
 .hero_action {
   @media #{$medium-only} {
@@ -188,13 +191,13 @@ ul.title-area.show-for-small {
 
 .hero_text {
   @media #{$medium-only} {
-  margin-top: -70px;
-  padding-left: 40px;
-  padding-right: 40px;
+    margin-top: -70px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   p {
-  text-align: center;
+    text-align: center;
   }
 }
 
@@ -263,11 +266,7 @@ ul.title-area.show-for-small {
 
 /*---------Large Size---------*/
 
-.hero_wrapper {
-  @media #{$large-up} {
-    padding-bottom: 15px;
-  }
-}
+
 .hero_text p {
   @media #{$large-up} {
     text-align: left;

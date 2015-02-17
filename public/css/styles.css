@@ -2482,9 +2482,8 @@ header {
   transition-delay: .5s; }
   .hero_action a {
     color: #FFFFFF; }
-
-.hero_action:hover {
-  background-color: #262626; }
+  .hero_action:hover {
+    background-color: #262626; }
 
 .highlights {
   background-color: #FFFFFF; }
@@ -2523,9 +2522,8 @@ header {
   transition-property: background-color;
   transition-duration: 1s;
   transition-delay: .5s; }
-
-.to_the_moon:hover {
-  background-color: #262626; }
+  .to_the_moon:hover {
+    background-color: #262626; }
 
 footer {
   background-color: #262626; }
@@ -2636,6 +2634,9 @@ ul.title-area.show-for-small {
 @media only screen and (max-width: 40em) {
   .hero_wrapper {
     margin-top: 0; } }
+@media only screen and (min-width:64.063em) {
+  .hero_wrapper {
+    padding-bottom: 15px; } }
 
 @media only screen and (max-width: 40em) {
   .hero_text p {
@@ -2644,6 +2645,15 @@ ul.title-area.show-for-small {
     margin-top: 0; } }
 
 @media only screen and (max-width: 40em) {
+  .ship_png {
+    background-image: url('../images/ship.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    width: 300px;
+    display: block;
+    margin: auto; } }
+@media only screen and (min-width:40.063em) and (max-width:64em) {
   .ship_png {
     background-image: url('../images/ship.png');
     background-repeat: no-repeat;
@@ -2663,16 +2673,6 @@ ul.title-area.show-for-small {
   .columns {
     padding-left: 3.125rem;
     padding-right: 3.125rem; } }
-
-@media only screen and (min-width:40.063em) and (max-width:64em) {
-  .ship_png {
-    background-image: url('../images/ship.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 230px;
-    width: 300px;
-    display: block;
-    margin: auto; } }
 
 @media only screen and (min-width:40.063em) and (max-width:64em) {
   .hero_action {
@@ -2732,10 +2732,6 @@ ul.title-area.show-for-small {
 
 /*---------Medium Size Only Elements end---------*/
 /*---------Large Size---------*/
-@media only screen and (min-width:64.063em) {
-  .hero_wrapper {
-    padding-bottom: 15px; } }
-
 @media only screen and (min-width:64.063em) {
   .hero_text p {
     text-align: left;
