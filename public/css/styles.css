@@ -2426,8 +2426,8 @@ header {
     color: #262626; }
   header ul {
     list-style-type: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     margin: 0;
     text-align: center;
     background-color: #262626;
@@ -2550,11 +2550,6 @@ footer {
 .arrow {
   margin-left: 20px; }
 
-/* test stuff */
-body {
-  background-color: blue; }
-
-/*---------end test stuff---------*/
 /*---------Small Size Only Elements---------*/
 @media only screen and (max-width: 40em) {
   header {
@@ -2605,6 +2600,11 @@ nav.top-bar .name h1 {
   header li {
     display: block;
     text-align: left; } }
+
+.top-bar .toggle-topbar a {
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .top-bar, .menu_icon {
   height: 60px; }
@@ -2678,7 +2678,9 @@ ul.title-area.show-for-small {
 
 @media only screen and (min-width:40.063em) and (max-width:64em) {
   .hero_text {
-    margin-top: -70px; } }
+    margin-top: -70px;
+    padding-left: 40px;
+    padding-right: 40px; } }
 .hero_text p {
   text-align: center; }
 
@@ -2727,7 +2729,7 @@ ul.title-area.show-for-small {
 /*---------Large Size---------*/
 @media only screen and (min-width:64.063em) and (max-width:90em) {
   .hero_wrapper {
-    padding-bottom: 30px; } }
+    padding-bottom: 15px; } }
 
 @media only screen and (min-width:64.063em) and (max-width:90em) {
   .hero_text p {
@@ -2755,7 +2757,8 @@ ul.title-area.show-for-small {
   .hero_action {
     display: inline-block;
     width: 310px;
-    margin-left: 30px; } }
+    margin-left: 30px;
+    margin-top: 28px; } }
 
 @media only screen and (min-width:64.063em) and (max-width:90em) {
   .more_details h4 {
