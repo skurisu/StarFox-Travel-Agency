@@ -2414,13 +2414,14 @@ header {
     background-image: url('../images/logo.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 125px;
-    width: 160px;
+    height: 120px;
+    width: 150px;
     display: block;
     margin: auto; }
   header h1 > a {
     display: block;
     font-weight: 300;
+    font-size: 24px;
     text-align: center;
     color: #262626; }
   header ul {
@@ -2437,6 +2438,11 @@ header {
   header li > a {
     color: #88C2C0; }
 
+.desktop_logo {
+  margin-top: 0; }
+  .desktop_logo span {
+    font-weight: 600; }
+
 .desktop-nav a:hover {
   color: #FFFFFF; }
 
@@ -2452,7 +2458,7 @@ header {
 .hero_wrapper {
   background-color: #88C2C0;
   margin-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   border-radius: 5px; }
 
 .hero_text p {
@@ -2470,7 +2476,6 @@ header {
   font-weight: 300;
   font-size: 18px;
   padding-top: 2px;
-  padding-bottom: 2px;
   border-bottom: 6px solid #262626;
   transition-property: background-color;
   transition-duration: 1s;
@@ -2629,6 +2634,10 @@ ul.title-area.show-for-small {
     background-color: #88C2C0; } }
 
 @media only screen and (max-width: 40em) {
+  .hero_wrapper {
+    margin-top: 0; } }
+
+@media only screen and (max-width: 40em) {
   .hero_text p {
     text-align: center;
     margin-bottom: 50px;
@@ -2717,6 +2726,38 @@ ul.title-area.show-for-small {
 /*---------Medium Size Only Elements end---------*/
 /*---------Large Size---------*/
 @media only screen and (min-width:64.063em) and (max-width:90em) {
+  .hero_wrapper {
+    padding-bottom: 30px; } }
+
+@media only screen and (min-width:64.063em) and (max-width:90em) {
+  .hero_text p {
+    text-align: left;
+    display: inline-block;
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 45px; } }
+
+@media only screen and (min-width:64.063em) and (max-width:90em) {
+  .shiplarge_png {
+    background-image: url('../images/ship.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    width: 300px;
+    display: inline-block;
+    float: right;
+    margin-top: -84px;
+    margin-right: 70px; } }
+
+@media only screen and (min-width:64.063em) and (max-width:90em) {
+  .hero_action {
+    display: inline-block;
+    width: 310px;
+    margin-left: 30px; } }
+
+@media only screen and (min-width:64.063em) and (max-width:90em) {
   .more_details h4 {
     margin-top: 0;
     margin-bottom: 0;
@@ -2734,7 +2775,13 @@ ul.title-area.show-for-small {
   border-top: 1px solid #646464; }
 
 .more_deals_wrapper {
-  border-top: 1px solid #646464; }
+  border-top: 1px solid #646464;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-delay: .5s; }
+
+.more_deals_wrapper:hover {
+  background-color: #262626; }
 
 .more_deals_mobile p {
   padding-top: 15px;
